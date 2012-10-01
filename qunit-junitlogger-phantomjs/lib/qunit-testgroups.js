@@ -151,7 +151,7 @@ TestGroup.prototype.outline = function(baseUrl) {
 TestGroup.prototype._outlineItem = function(baseUrl) {
 	var item = $("<li/>");
 	
-	var link = TestGroup.prototype._makeOutlineLink(this.name, baseUrl);
+	var link = TestGroup._makeOutlineLink(this.name, baseUrl);
 	item.append(link);
 	
 	var itemsList = this._outlineItemsList(baseUrl);
@@ -189,7 +189,7 @@ TestFile.prototype.loadAndRun = function() {
 TestFile.prototype._outlineItem = function(baseUrl) {
 	var item = $("<li/>");
 	
-	var link = TestGroup.prototype._makeOutlineLink(this.name, baseUrl);
+	var link = TestGroup._makeOutlineLink(this.name, baseUrl);
 	item.append(link);
 	
 	return item;
