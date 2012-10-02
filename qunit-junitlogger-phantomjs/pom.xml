@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.operativus</groupId>
+	<artifactId>qunit-junitlogger-phantomjs</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>qunit-junitlogger-phantomjs</name>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>net.kennychua</groupId>
+					<artifactId>phantomjs-qunit-runner</artifactId>
+					<configuration>
+						<jsSourceDirectory>src/main/js</jsSourceDirectory>
+						<jsTestDirectory>src/test/js</jsTestDirectory>
+						<ignoreFailures>false</ignoreFailures>
+						<!-- 
+						<phantomJsExec></phantomJsExec>
+						 -->
+						<!-- Optional -->
+						<includeLibsInDir>
+							<directory>lib</directory>
+							<includes>
+								<include>**/*.js</include>
+							</includes>
+						</includeLibsInDir>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>
