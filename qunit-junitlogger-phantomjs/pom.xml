@@ -14,28 +14,31 @@
 	</properties>
 
 	<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>net.kennychua</groupId>
-					<artifactId>phantomjs-qunit-runner</artifactId>
-					<configuration>
-						<jsSourceDirectory>src/main/js</jsSourceDirectory>
-						<jsTestDirectory>src/test/js</jsTestDirectory>
-						<ignoreFailures>false</ignoreFailures>
-						<!-- 
-						<phantomJsExec></phantomJsExec>
-						 -->
-						<!-- Optional -->
-						<includeLibsInDir>
-							<directory>lib</directory>
-							<includes>
-								<include>**/*.js</include>
-							</includes>
-						</includeLibsInDir>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>net.kennychua</groupId>
+				<artifactId>phantomjs-qunit-runner</artifactId>
+				<configuration>
+					<jsSourceDirectory>${project.basedir}/src/main/js/</jsSourceDirectory>
+					<jsTestDirectory>${project.basedir}/src/test/js/</jsTestDirectory>
+					<ignoreFailures>false</ignoreFailures>
+					<phantomJsExec>${phantomjs.bin}</phantomJsExec>
+					<libraries>
+						<directory>${project.basedir}/lib/js/</directory>
+						<includes>
+							<include>**/*.js</include>
+						</includes>
+					</libraries>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>test</phase>
+						<goals>
+							<goal>test</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
 	</build>
 </project>
