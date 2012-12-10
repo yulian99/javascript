@@ -1,6 +1,8 @@
 /.settings
 /.project
+/.buildpath
 /target
-/simple.xml
-/npm-debug.log
 /node_modules
+/simple.xml
+/*.log
+/*~
