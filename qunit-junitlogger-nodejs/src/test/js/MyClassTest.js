@@ -3,6 +3,7 @@ var MyClassModule = require('../../main/js/MyClass.js');
 var MyClass = MyClassModule.MyClass;
 var MyClassConst = MyClassModule.MyClassConst;
 
+QUnit.init();
 QUnit.module("MyClass");
 
 QUnit.test("init()", function() {
@@ -29,4 +30,3 @@ QUnit.test("setAttribute()", function() {
 	actual = obj.getAttribute();
 	QUnit.equal(actual, expected);
 });
-
