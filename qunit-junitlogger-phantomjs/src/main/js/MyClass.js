@@ -25,7 +25,7 @@ MyClass.prototype.getAttribute = function () {
 	return this.attribute;
 };
 
-MyClass.prototype.missingSemicollonOnCheckstyle = function () {
+MyClass.prototype.missingSemicolonOnCheckstyle = function () {
 	
 	//Just to have a warning on JSLint/Checkstyle
-}
+} // Warning on this line
