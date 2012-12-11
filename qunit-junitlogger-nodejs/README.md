@@ -23,7 +23,7 @@ JUnit XML Output:
 simple.xml
 </code>
 
-[Integration with Jenkins](https://github.com/fgka/javascript/wiki/How-to-setup-Jenkins)
+[Integration with Jenkins](https://github.com/fgka/javascript/wiki/How-to-setup-Jenkins-for-NodeJS-QUnit-projects)
 
 _Tested with_:
  * <code>Qunit 1.10.0</code>
