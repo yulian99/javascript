@@ -20,8 +20,12 @@ MyClass.prototype.setAttribute = function (value) {
 	this.attribute = value;
 };
 
-
 MyClass.prototype.getAttribute = function () {
 	
 	return this.attribute;
 };
+
+MyClass.prototype.missingSemicollonOnCheckstyle = function () {
+	
+	//Just to have a warning on JSLint/Checkstyle
+}
