@@ -1,6 +1,6 @@
-module("MyClass");
+QUnit.module("MyClass");
 
-test("init()", function() {
+QUnit.test("init()", function() {
 	
 	var obj = null;
 	var actual = null;
@@ -12,7 +12,7 @@ test("init()", function() {
 	equal(actual, expected);
 });
 
-test("setAttribute()", function() {
+QUnit.test("setAttribute()", function() {
 	
 	var obj = null;
 	var actual = null;

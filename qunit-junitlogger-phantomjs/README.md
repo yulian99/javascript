@@ -20,6 +20,11 @@ Run it with:
 mvn -Dphantomjs.bin=/opt/phantomjs/bin/phantomjs clean install
 </code>
 
+JUnit XML output:
+<code>
+target/qunit/junitxml/
+</code>
+
 For QUnit HTML generation use:
 
 <code>
