@@ -15,7 +15,6 @@ To run the project using maven you need to provide the <code>phantomjs.bin</code
 
 
 Run it with: 
-
 <code>
 mvn -Dphantomjs.bin=/opt/phantomjs/bin/phantomjs clean install
 </code>
@@ -26,10 +25,12 @@ target/qunit/junitxml/
 </code>
 
 For QUnit HTML generation use:
-
 <code>
 mvn -Dphantomjs.bin=/opt/phantomjs/bin/phantomjs phantomjs-qunit-runner:generate-html
 </code>
+
+
+[Integration with Jenkins](https://github.com/fgka/javascript/wiki/How-to-setup-Jenkins-for-PhantomJS-QUnit-projects)
 
 
 _Tested with_:
