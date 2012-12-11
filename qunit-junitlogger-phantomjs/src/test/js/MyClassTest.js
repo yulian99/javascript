@@ -25,3 +25,15 @@ QUnit.test("setAttribute()", function() {
 	equal(actual, expected);
 });
 
+QUnit.test("setAttribute(): Fail", function() {
+	
+	var obj = null;
+	var actual = null;
+	var expected = null;
+	
+	obj = new MyClass();
+	expected = 'something';
+	obj.setAttribute(expected);
+	actual = obj.getAttribute();
+	QUnit.equal(actual, expected + 'fail');
+});
