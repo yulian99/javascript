@@ -1,4 +1,6 @@
 javascript
 ==========
 
-JavaScript projects
+JavaScript projects for CI
+
+
