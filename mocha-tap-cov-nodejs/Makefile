@@ -18,7 +18,7 @@ install:
 	npm install mocha qunit-mocha-ui 
 
 target-dir:
-	make -p target
+	mkdir -p target
 
 .PHONY: cov-json
 .PHONY: cov-html
