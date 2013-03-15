@@ -1,5 +1,5 @@
-QUnit Maven and Node.JS
-=========================
+QUnit, Mocha, JScoverage, and Node.JS
+=====================================
 
 This project is a [Mocha](http://visionmedia.github.com/mocha/) with [QUnit UI](https://github.com/itaylor/qunit-mocha-ui) based project. It aims to help using TDD with JavaScript in a CI environment with [Jenkins](http://jenkins-ci.org/).
 
