@@ -1,0 +1,9 @@
+/.settings
+/.project
+/.buildpath
+/node_modules
+/src/main/js-cov
+/*.swp
+/*.log
+/*~
+/target
