@@ -11,6 +11,9 @@ prepare-cov: install
 test: install
 	node src/test/js/testrunner.js dot
 
+test-xunit: target-dir install
+	node src/test/js/testrunner.js xunit > target/result.xml || touch target/output.err
+
 test-tap: target-dir install
 	node src/test/js/testrunner.js tap > target/result.tap || touch target/output.err
 
