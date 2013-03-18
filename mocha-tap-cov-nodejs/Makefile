@@ -20,7 +20,7 @@ install:
 target-dir:
 	mkdir -p target
 
-clear:
+clean:
 	rm -rf target
 
 post-err:
